@@ -22,6 +22,7 @@ main {
     position: relative;
 
     .message {
+      all: unset;
       position: absolute;
       background-color: white;
       padding: 5px;
@@ -30,7 +31,12 @@ main {
       top: 52%;
       opacity: 0;
       user-select: none;
-      transition: opacity 0.25s ease;
+      transition: all 0.25s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
     }
 
     &:hover .message {
@@ -39,7 +45,7 @@ main {
 
     #bckImg {
       height: 90%;
-      border-radius: 1000px;
+      border-radius: 50%;
     }
   }
 
