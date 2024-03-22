@@ -26,19 +26,38 @@ nav {
       height: 100px;
     }
   }
-
-  .right-side {
+  #nonLogo {
     display: flex;
-    gap: 15px;
+    gap: 30px;
 
-    a {
-      all: unset;
-      transition: all 0.15s ease;
+    .left-side {
+      display: flex;
+      gap: 15px;
 
-      &:hover {
-        cursor: pointer;
-        border-bottom: 5px solid blue;
-        margin-bottom: -5px;
+      p {
+        transition: all 0.15s ease;
+
+        &:hover {
+          cursor: pointer;
+          border-bottom: 5px solid blue;
+          margin-bottom: -5px;
+        }
+      }
+    }
+
+    .right-side {
+      display: flex;
+      gap: 15px;
+
+      a {
+        all: unset;
+        transition: all 0.15s ease;
+
+        &:hover {
+          cursor: pointer;
+          border-bottom: 5px solid blue;
+          margin-bottom: -5px;
+        }
       }
     }
   }
