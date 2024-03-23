@@ -1,3 +1,6 @@
+// STYLES
+import "@styles/Skills.scss";
+
 // INFORMATION
 import { engInfo, srbInfo } from "@info/info-array";
 
@@ -13,12 +16,37 @@ const Skills = () => {
   const langChange = useAtomValue(languageChange);
 
   return (
-    <main>
+    <main id="skills">
       <h1>
         {langChange
           ? engInfo.nav[engInfo.nav.length - 2]
           : srbInfo.nav[srbInfo.nav.length - 2]}
       </h1>
+      <p>
+        {langChange
+          ? engInfo.skills.hardSkills[0]
+          : srbInfo.skills.hardSkills[0]}
+      </p>
+      <p>
+        {langChange
+          ? engInfo.skills.softSkills[0]
+          : srbInfo.skills.softSkills[0]}
+      </p>
+      <p>
+        {langChange
+          ? engInfo.skills.transferableSkills[0]
+          : srbInfo.skills.transferableSkills[0]}
+      </p>
+      <p>
+        {langChange
+          ? engInfo.skills.jobRelatedSkills[0]
+          : srbInfo.skills.jobRelatedSkills[0]}
+      </p>
+      <p>
+        {langChange
+          ? engInfo.skills.adaptiveSkills[0]
+          : srbInfo.skills.adaptiveSkills[0]}
+      </p>
     </main>
   );
 };
