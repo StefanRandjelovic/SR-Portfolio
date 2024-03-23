@@ -1,4 +1,9 @@
-main {
+// STYLES
+@import "@styles/global.scss";
+
+#about {
+  @include main(row);
+
   .leftSideAbout {
     width: 50%;
     height: 90%;
@@ -29,12 +34,9 @@ main {
       color: red;
     }
 
-    p:last-of-type{
-        display: flex;
-        align-items: center;
+    p:last-of-type {
+      display: flex;
+      align-items: center;
     }
-
-    
   }
 }
-
