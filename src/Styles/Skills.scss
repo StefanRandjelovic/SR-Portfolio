@@ -1,0 +1,6 @@
+// STYLES
+@import "@styles/global.scss";
+
+#skills {
+  @include main(column);
+}
