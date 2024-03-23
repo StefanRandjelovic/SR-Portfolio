@@ -10,11 +10,21 @@ const engInfo = {
     "As you already saw, my name is Stefan about a year ago, I started studying front-end developement. Enthusiasm for this topic reached its zenith when I enrolled in the Comtrade CODE academy that has it's headquarters here in Belgrade. Ever since I've completed the course, I've been working on my resume in the spare time that I've got.",
     "I also have an experience with digital marketing, having been volunteered on a project regarding mental health awareness. My role in the project was making visual content.",
     "Otherwise I'm an avid nature lover, that is at home in the forest.",
-    "P.S. If you haven't noticed there is a CV file hidden on an avatar inside the Home page.",
+    "P.S. If you haven't noticed, there is a CV file hidden on an avatar inside the Home page.",
   ],
   aboutImg: "This is non cartonized me.",
-  skills: [],
-  contact: [],
+  skills: {
+    hardSkills: ["Hard skills:"],
+    softSkills: ["Soft skills:"],
+    transferableSkills: ["Transferable skills:"],
+    jobRelatedSkills: ["Job-related skills:"],
+    adaptiveSkills: ["Adaptive skills:"],
+  },
+  contact: {
+    email: ["E-mail adress:", "stefanrandjelovic413@gmail.com"],
+    gitHub: ["GitHub profile:", "https://github.com/StefanRandjelovic"],
+    socialMedia: [],
+  },
 };
 
 const srbInfo = {
@@ -32,8 +42,18 @@ const srbInfo = {
     "P.S. Za slučaj da niste primetili, moj CV file se nalazi skriven unutar avatara u Home stranici.",
   ],
   aboutImg: "Ovo sam ja u ne nacrtanoj verziji.",
-  skills: [],
-  contact: [],
+  skills: {
+    hardSkills: ["Tvrde veštine:"],
+    softSkills: ["Meke veštine:"],
+    transferableSkills: ["Prenosive veštine:"],
+    jobRelatedSkills: ["Poslovne veštine:"],
+    adaptiveSkills: ["Adaptivne veštine:"],
+  },
+  contact: {
+    email: "E-mail adresa:",
+    gitHub: "GitHub profil:",
+    socialMedia: [],
+  },
 };
 
 export { engInfo, srbInfo };
