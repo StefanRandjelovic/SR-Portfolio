@@ -22,10 +22,10 @@ const Home = () => {
 
   return (
     <>
-      <main className={darkModeState ? "dark" : null}>
+      <main className={darkModeState ? "dark" : null} id="home">
         <div className="homeLeft">
           <img src={Avatar} alt="Cartoonified image" id="bckImg" />
-          <a href={CV}  target="_blank" className="message">
+          <a href={CV} target="_blank" className="message">
             {langChange ? engInfo.home[3] : srbInfo.home[3]}
           </a>
         </div>

@@ -19,7 +19,7 @@ const About = () => {
   const langChange = useAtomValue(languageChange);
 
   return (
-    <main>
+    <main id="about">
       <div className="leftSideAbout">
         <img src={MyIMG} alt="My image" id="myIMG" />
         <label htmlFor="#myIMG">
