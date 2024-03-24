@@ -16,7 +16,7 @@ const Skills = () => {
   const langChange = useAtomValue(languageChange);
 
   return (
-    <main id="skills">
+    <main id="skills" className={darkModeState ? "darkS" : null}>
       <h1>
         {langChange
           ? engInfo.nav[engInfo.nav.length - 2]

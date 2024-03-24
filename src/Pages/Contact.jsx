@@ -19,7 +19,7 @@ const Contact = () => {
   const langChange = useAtomValue(languageChange);
 
   return (
-    <main id="contact">
+    <main id="contact" className={darkModeState ? "darkC" : null}>
       <h1>
         {langChange
           ? engInfo.nav[engInfo.nav.length - 1]
@@ -95,7 +95,7 @@ const Contact = () => {
           {` ${engInfo.contact.socialMedia.linkedIn[1]}`}
         </p>
       </div>
-      <p id="copied">COPIED!</p>
+      <p id="copied">{langChange ? "COPIED!" : "KOPIRANO!"}</p>
     </main>
   );
 };

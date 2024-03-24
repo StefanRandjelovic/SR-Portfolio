@@ -19,7 +19,7 @@ const About = () => {
   const langChange = useAtomValue(languageChange);
 
   return (
-    <main id="about">
+    <main id="about" className={darkModeState ? "darkA" : null}>
       <div className="leftSideAbout">
         <img src={MyIMG} alt="My image" id="myIMG" />
         <label htmlFor="#myIMG">

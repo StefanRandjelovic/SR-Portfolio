@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-      <main className={darkModeState ? "dark" : null} id="home">
+      <main className={darkModeState ? "darkH" : null} id="home">
         <div className="homeLeft">
           <img src={Avatar} alt="Cartoonified image" id="bckImg" />
           <a href={CV} target="_blank" className="message">
