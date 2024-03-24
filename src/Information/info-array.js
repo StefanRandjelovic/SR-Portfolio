@@ -21,9 +21,19 @@ const engInfo = {
     adaptiveSkills: ["Adaptive skills:"],
   },
   contact: {
+    message: [
+      "Here you can find my GitHub projects portfolio, LinkedIn profile, as well as my contact email adress,",
+      "I do hope that I have peek your interest, and I am looking forward to hearing from you.",
+    ],
     email: ["E-mail adress:", "stefanrandjelovic413@gmail.com"],
     gitHub: ["GitHub profile:", "https://github.com/StefanRandjelovic"],
-    socialMedia: [],
+    socialMedia: {
+      socialM: "Social media:",
+      linkedIn: [
+        "LinkedIn:",
+        "https://www.linkedin.com/in/stefan-randjelovic-4948b3160",
+      ],
+    },
   },
 };
 
@@ -50,9 +60,15 @@ const srbInfo = {
     adaptiveSkills: ["Adaptivne veštine:"],
   },
   contact: {
+    message: [
+      "Ovde možete pronaći moj GitHub projekt portfolio, LinkedIn profil, kao i moju email adresu za kontakt,",
+      "Nadam se da sam vas zainteresovao, i očekujem da se čujem sa vama",
+    ],
     email: "E-mail adresa:",
     gitHub: "GitHub profil:",
-    socialMedia: [],
+    socialMedia: {
+      socialM: "Društvene mreže:",
+    },
   },
 };
 
