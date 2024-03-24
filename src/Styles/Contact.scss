@@ -2,5 +2,57 @@
 @import "@styles/global.scss";
 
 #contact {
-  @include main(column);
+  @include main(column, center, center);
+  position: relative;
+  gap: 25px;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #mail,
+  #git,
+  #linkedIn {
+    transition: all 0.15s ease;
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      transform: scale(1.03);
+    }
+  }
+
+  #mail span,
+  #git span,
+  #linkedIn span {
+    color: crimson;
+  }
+
+  .socialM {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+
+    p:first-child {
+      font-size: 1.2rem;
+    }
+  }
+
+  .message {
+    text-align: center;
+  }
+
+  #copied {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+  }
 }
