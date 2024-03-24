@@ -2,7 +2,13 @@
 @import "@styles/global.scss";
 
 #home {
-  @include main(row,center,space-evenly);
+  @include main(
+    row,
+    center,
+    space-evenly,
+    rgba(255, 0, 212, 0.3),
+    rgba(0, 255, 255, 0.3)
+  );
 
   .homeLeft {
     height: 100%;
@@ -97,5 +103,31 @@
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+// DARK MODE
+#home.darkH {
+  @include main(
+    row,
+    center,
+    space-evenly,
+    rgba(33, 3, 255, 0.3),
+    rgba(204, 0, 255, 0.3)
+  );
+
+  .homeLeft {
+    .message {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  .homeRight {
+    color: white;
+
+    p:last-of-type {
+      color: coral;
+    }
   }
 }

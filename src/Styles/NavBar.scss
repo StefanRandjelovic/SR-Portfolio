@@ -61,4 +61,58 @@ nav {
       }
     }
   }
+
+  #darkMode {
+    transition: all 0.25s ease;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.15);
+    }
+  }
+}
+
+// DARK MODE
+.dark {
+  background-color: black;
+  color: white;
+  border-bottom: 1px ridge gold;
+
+  #logo {
+    background-color: black;
+    border: 1px gold ridge;
+
+    img {
+      filter: invert(76%) sepia(72%) saturate(696%) hue-rotate(358deg)
+        brightness(100%) contrast(105%);
+    }
+  }
+
+  #nonLogo {
+    .left-side {
+      p {
+        &:hover {
+          border-bottom: 5px solid gold;
+        }
+      }
+    }
+
+    .right-side {
+      a {
+        &:hover {
+          border-bottom: 5px solid gold;
+        }
+      }
+    }
+  }
+
+  #darkMode {
+    filter: invert(76%) sepia(72%) saturate(696%) hue-rotate(358deg)
+      brightness(100%) contrast(105%);
+    transition: all 0.25s ease;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
 }

@@ -2,7 +2,13 @@
 @import "@styles/global.scss";
 
 #about {
-  @include main(row, center, space-evenly);
+  @include main(
+    row,
+    center,
+    space-evenly,
+    rgba(255, 0, 212, 0.3),
+    rgba(0, 255, 255, 0.3)
+  );
 
   .leftSideAbout {
     width: 50%;
@@ -37,6 +43,29 @@
     p:last-of-type {
       display: flex;
       align-items: center;
+    }
+  }
+}
+
+// DARK MODE
+#about.darkA {
+  @include main(
+    row,
+    center,
+    space-evenly,
+    rgba(33, 3, 255, 0.3),
+    rgba(204, 0, 255, 0.3)
+  );
+
+  .leftSideAbout {
+    color: white;
+  }
+
+  .rightSideAbout {
+    color: white;
+
+    p:nth-of-type(3) {
+      color: aqua;
     }
   }
 }

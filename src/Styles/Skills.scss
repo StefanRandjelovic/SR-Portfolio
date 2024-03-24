@@ -2,5 +2,23 @@
 @import "@styles/global.scss";
 
 #skills {
-  @include main(column, center, space-evenly);
+  @include main(
+    column,
+    center,
+    space-evenly,
+    rgba(255, 0, 212, 0.3),
+    rgba(0, 255, 255, 0.3)
+  );
+}
+
+// DARK MODE
+#skills.darkS {
+  @include main(
+    column,
+    center,
+    space-evenly,
+    rgba(33, 3, 255, 0.3),
+    rgba(204, 0, 255, 0.3)
+  );
+  color: white;
 }
