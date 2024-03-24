@@ -14,6 +14,7 @@ export default defineConfig({
       { find: "@info", replacement: "/src/Information/" },
       { find: "@global", replacement: "/src/GVS/" },
       { find: "@documents", replacement: "/src/Documents/" },
+      { find: "@helpers", replacement: "/src/Helper_functions/" },
       // {find:'', replacement:''},
     ],
   },
