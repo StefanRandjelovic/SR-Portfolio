@@ -1,6 +1,7 @@
 // DEV DEPENDENCIES
 import { Link } from "react-router-dom";
 import { useAtom } from "jotai";
+import { useEffect } from "react";
 
 // SVG Assets
 import SrLogo from "@svg/SR.svg";
@@ -9,6 +10,9 @@ import Light from "@svg/light_mode.svg";
 
 // STYLES
 import "@styles/NavBar.scss";
+
+// HELPERS
+import { darkBackground } from "@helpers/helpers";
 
 // INFORMATION
 import { engInfo, srbInfo } from "@info/info-array";
@@ -21,8 +25,13 @@ const NavBar = () => {
   const [darkModeState, setDarkModeState] = useAtom(darkMode);
   const [langChange, setLangChange] = useAtom(languageChange);
 
+  // DARK MODE BACKGROUND CHANGER
+  useEffect(() => {
+    darkBackground(darkModeState);
+  }, [darkModeState]);
+
   return (
-    <nav>
+    <nav className={darkModeState ? "dark" : null}>
       <Link id="logo" to={"/"} title="Home page">
         <img src={SrLogo} alt="logo" />
       </Link>
@@ -44,7 +53,7 @@ const NavBar = () => {
         </div>
         <img
           onClick={() => setDarkModeState(!darkModeState)}
-          src={darkModeState ? Dark : Light}
+          src={darkModeState ? Light : Dark}
           alt="Dark/Light mode toggle"
           id="darkMode"
         />
