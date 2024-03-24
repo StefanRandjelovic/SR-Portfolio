@@ -2,7 +2,7 @@
 @import "@styles/global.scss";
 
 #home {
-  @include main(row);
+  @include main(row,center,space-evenly);
 
   .homeLeft {
     height: 100%;

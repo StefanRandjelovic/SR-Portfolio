@@ -2,5 +2,5 @@
 @import "@styles/global.scss";
 
 #skills {
-  @include main(column);
+  @include main(column, center, space-evenly);
 }

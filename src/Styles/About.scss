@@ -2,7 +2,7 @@
 @import "@styles/global.scss";
 
 #about {
-  @include main(row);
+  @include main(row, center, space-evenly);
 
   .leftSideAbout {
     width: 50%;
