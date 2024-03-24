@@ -1,14 +1,14 @@
 // FONT IMPORTS
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
 
 // font-family: "Staatliches", sans-serif;
 // font-family: "PT Serif", serif;
 // font-family: "Girassol", serif;
 
 // MIXINS
-@mixin main ($x){
+@mixin main($x, $y, $z) {
   height: 85%;
   width: 90%;
   margin: 20px auto 20px auto;
@@ -17,8 +17,8 @@
   border-radius: 50px 15px 15px 15px;
   display: flex;
   flex-direction: $x;
-  align-items: center;
-  justify-content: space-evenly;
+  align-items: $y;
+  justify-content: $z;
   background-image: linear-gradient(
     63.5deg,
     rgba(255, 0, 212, 0.3) 25%,
