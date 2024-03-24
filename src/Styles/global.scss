@@ -8,8 +8,8 @@
 // font-family: "Girassol", serif;
 
 // MIXINS
-@mixin main($x, $y, $z) {
-  height: 85%;
+@mixin main($x, $y, $z, $k, $l) {
+  min-height: 85vh;
   width: 90%;
   margin: 20px auto 20px auto;
   background-color: rgba($color: #fff, $alpha: 0.3);
@@ -19,11 +19,7 @@
   flex-direction: $x;
   align-items: $y;
   justify-content: $z;
-  background-image: linear-gradient(
-    63.5deg,
-    rgba(255, 0, 212, 0.3) 25%,
-    rgba(0, 255, 255, 0.3) 75%
-  );
+  background-image: linear-gradient(63.5deg, $k 25%, $l 75%);
 }
 
 * {
@@ -38,10 +34,9 @@ html {
   background-image: url("@images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 body,
 #root {
-  height: 100vh;
+  height: 100%;
 }
