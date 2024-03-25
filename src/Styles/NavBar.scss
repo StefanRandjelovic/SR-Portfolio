@@ -16,6 +16,7 @@ nav {
     left: 5px;
     border: 1px gray ridge;
     transition: all 0.15s ease;
+    z-index: 10;
 
     &:hover {
       transform: scale(1.05);
@@ -70,6 +71,75 @@ nav {
       transform: scale(1.15);
     }
   }
+  .menu {
+    display: none;
+
+    #hamburgerMenu {
+      filter: invert(0%) sepia(0%) saturate(648%) hue-rotate(298deg)
+        brightness(83%) contrast(106%);
+
+      transition: all 0.25s ease;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  #modalMenu {
+    position: absolute;
+    top: 102%;
+    left: 50%;
+    right: 30px;
+    background-color: white;
+    z-index: 10;
+    display: none;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    animation: modalShow 0.25s ease-in-out;
+    padding: 5px 15px 15px 15px;
+    border-radius: 10px;
+
+    .innerMM {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: start;
+
+      p {
+        transition: all 0.15s ease;
+
+        &:hover {
+          cursor: pointer;
+          border-bottom: 5px solid blue;
+          margin-bottom: -5px;
+        }
+      }
+
+      a {
+        all: unset;
+        transition: all 0.15s ease;
+
+        &:hover {
+          cursor: pointer;
+          border-bottom: 5px solid blue;
+          margin-bottom: -5px;
+        }
+      }
+    }
+  }
+}
+
+// ANIMATION
+@keyframes modalShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 // DARK MODE
@@ -113,6 +183,35 @@ nav {
 
     &:hover {
       transform: scale(1.15);
+    }
+  }
+  .menu {
+    #hamburgerMenu {
+      filter: invert(76%) sepia(72%) saturate(696%) hue-rotate(358deg)
+        brightness(100%) contrast(105%);
+      transition: all 0.25s ease;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+  }
+  #modalMenu {
+    background-color: black;
+
+    .innerMM {
+      p {
+        &:hover {
+          border-bottom: 5px solid gold;
+        }
+      }
+
+      a {
+        &:hover {
+          border-bottom: 5px solid gold;
+        }
+      }
     }
   }
 }
