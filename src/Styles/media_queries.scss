@@ -1,0 +1,95 @@
+// BIGGER THAN 2000 PX
+@media only screen and (min-width: 2000px) {
+  * {
+    font-size: 30px;
+  }
+}
+
+// BIGGER THAN 2300 PX
+@media only screen and (min-width: 2300px) {
+  * {
+    font-size: 35px;
+  }
+}
+
+// LOWER THAN 1000 PX
+@media only screen and (max-width: 1000px) {
+  // HOME PAGE
+  #home {
+    .homeRight {
+      width: 90%;
+    }
+  }
+
+  // ABOUT
+  #about {
+    gap: 15px;
+    .rightSideAbout {
+      width: 90%;
+      text-align: center;
+    }
+  }
+}
+
+// LOWER THAN 620 PX
+@media only screen and (max-width: 620px) {
+  nav {
+    padding-right: 30px;
+  }
+}
+
+// LOWER THAN 565PX
+@media only screen and (max-width: 565px) {
+  * {
+    font-size: 20px;
+  }
+
+  // HOME PAGE
+  #home {
+    .homeLeft {
+      width: 90%;
+    }
+  }
+
+  // NAV COMPONENT
+  nav {
+    #nonLogo {
+      display: none;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    #modalMenu {
+      display: flex;
+    }
+  }
+
+  // CONTACT
+  #contact {
+    text-align: center;
+  }
+}
+
+// LOWER THAN 360 PX
+@media only screen and (max-width: 360px) {
+  * {
+    font-size: 18px;
+  }
+}
+
+// LOWER THAN 320 PX
+@media only screen and (max-width: 360px) {
+  * {
+    font-size: 16px;
+  }
+}
+
+// LOWER THAN 290 PX
+@media only screen and (max-width: 290px) {
+  * {
+    font-size: 14px;
+  }
+}
