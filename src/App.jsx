@@ -1,5 +1,10 @@
 // DEV DEPENDENCIES
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useAtomValue } from "jotai";
+import { useEffect } from "react";
+
+// GSVariable
+import { languageChange } from "@global/store.js";
 
 // PAGES
 import Home from "@pages/Home";
@@ -11,6 +16,14 @@ import Skills from "@pages/Skills";
 import NavBar from "@components/NavBar";
 
 function App() {
+  // GSVariable
+  const langChange = useAtomValue(languageChange);
+
+  // DYNAMIC TITLE CHANGER
+  useEffect(() => {
+    document.title = langChange ? "SR Portfolio site" : "SR Portfolio sajt";
+  }, [langChange]);
+
   return (
     <Router>
       <NavBar />
