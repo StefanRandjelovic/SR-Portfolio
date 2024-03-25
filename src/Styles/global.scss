@@ -19,6 +19,7 @@
   flex-direction: $x;
   align-items: $y;
   justify-content: $z;
+  flex-wrap: wrap;
   background-image: linear-gradient(63.5deg, $k 25%, $l 75%);
 }
 
