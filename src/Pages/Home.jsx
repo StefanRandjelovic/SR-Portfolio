@@ -12,8 +12,8 @@ import Avatar from "@images/avatarR.jpg";
 
 // INFORMATION
 import { engInfo, srbInfo } from "@info/info-array";
-
-import CV from "@documents/SR_CV.pdf";
+import CV_SRB from "@documents/SR_CV_SRB.pdf";
+import CV_ENG from "@documents/SR_CV_ENG.pdf";
 
 const Home = () => {
   // GSVariable
@@ -25,7 +25,11 @@ const Home = () => {
       <main className={darkModeState ? "darkH" : null} id="home">
         <div className="homeLeft">
           <img src={Avatar} alt="Cartoonified image" id="bckImg" />
-          <a href={CV} target="_blank" className="message">
+          <a
+            href={langChange ? CV_ENG : CV_SRB}
+            target="_blank"
+            className="message"
+          >
             {langChange ? engInfo.home[3] : srbInfo.home[3]}
           </a>
         </div>
