@@ -36,4 +36,46 @@ const darkBackground = (darkModeState) => {
   }
 };
 
-export { handleCopyText, handleOnlyCopy, darkBackground };
+// GET IMG
+const getImgH = (img) => {
+  switch (img) {
+    case "React JS":
+      return "/src/Svg/react.svg";
+    case "JavaScript":
+      return "/src/Svg/js.svg";
+    case "HTML5":
+      return "/src/Svg/html.svg";
+    case "CSS3":
+      return "/src/Svg/css.svg";
+    case "SCSS":
+      return "/src/Svg/sass.svg";
+    case "Canva":
+      return "/src/Svg/canva.svg";
+    case "Photoshop":
+      return "/src/Svg/photoshop.svg";
+    case "SEO":
+      return "/src/Svg/seo.svg";
+  }
+};
+
+const getImgS = (img) => {
+  switch (img) {
+    case "Communicative":
+    case "Komunikativan":
+      return "/src/Svg/communication.svg";
+    case "Team player":
+    case "Timski igrač":
+      return "/src/Svg/team.svg";
+    case "Problem solver":
+    case "Rešavanje problema":
+      return "/src/Svg/problem-solver.svg";
+    case "Willing to learn and improve":
+    case "Voljan da uči i usavršava se":
+      return "/src/Svg/learn.svg";
+    case "Creative":
+    case "Kreativan":
+      return "/src/Svg/butterfly.svg";
+  }
+};
+
+export { handleCopyText, handleOnlyCopy, darkBackground, getImgH, getImgS };
