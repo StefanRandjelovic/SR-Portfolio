@@ -10,6 +10,9 @@ import { useAtomValue } from "jotai";
 // GSVariable
 import { languageChange, darkMode } from "@global/store.js";
 
+// HELPER FUNCTIONS
+import { getImgH, getImgS } from "@helpers/helpers";
+
 const Skills = () => {
   // GSVariable
   const darkModeState = useAtomValue(darkMode);
@@ -22,31 +25,38 @@ const Skills = () => {
           ? engInfo.nav[engInfo.nav.length - 2]
           : srbInfo.nav[srbInfo.nav.length - 2]}
       </h1>
-      <p>
+      <h2>{langChange ? engInfo.skills.a : srbInfo.skills.a}</h2>
+      <div className="hardSkills">
         {langChange
-          ? engInfo.skills.hardSkills[0]
-          : srbInfo.skills.hardSkills[0]}
-      </p>
-      <p>
+          ? engInfo.skills.hardSkills.map((skill) => (
+              <div className="gridElem">
+                <p key={crypto.randomUUID()}>{skill}</p>
+                <img src={getImgH(skill)} alt={skill} />
+              </div>
+            ))
+          : srbInfo.skills.hardSkills.map((skill) => (
+              <div className="gridElem">
+                <p key={crypto.randomUUID()}>{skill}</p>
+                <img src={getImgH(skill)} alt={skill} />
+              </div>
+            ))}
+      </div>
+      <h2>{langChange ? engInfo.skills.b : srbInfo.skills.b}</h2>
+      <div className="softSkills">
         {langChange
-          ? engInfo.skills.softSkills[0]
-          : srbInfo.skills.softSkills[0]}
-      </p>
-      <p>
-        {langChange
-          ? engInfo.skills.transferableSkills[0]
-          : srbInfo.skills.transferableSkills[0]}
-      </p>
-      <p>
-        {langChange
-          ? engInfo.skills.jobRelatedSkills[0]
-          : srbInfo.skills.jobRelatedSkills[0]}
-      </p>
-      <p>
-        {langChange
-          ? engInfo.skills.adaptiveSkills[0]
-          : srbInfo.skills.adaptiveSkills[0]}
-      </p>
+          ? engInfo.skills.softSkills.map((skill) => (
+              <div className="gridElem">
+                <p key={crypto.randomUUID()}>{skill}</p>
+                <img src={getImgS(skill)} alt={skill} />
+              </div>
+            ))
+          : srbInfo.skills.softSkills.map((skill) => (
+              <div className="gridElem">
+                <p key={crypto.randomUUID()}>{skill}</p>
+                <img src={getImgS(skill)} alt={skill} />
+              </div>
+            ))}
+      </div>
     </main>
   );
 };
