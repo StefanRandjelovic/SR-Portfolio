@@ -27,15 +27,84 @@
     justify-content: center;
     gap: 25px;
 
-    .gridElem {
+    .gridElemH,
+    .gridElemS {
       display: flex;
       align-items: center;
       gap: 15px;
 
-      img {
+      .img {
         width: 200px;
         height: 200px;
       }
+    }
+  }
+
+  .hardSkills {
+    .gridElemH {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    .gridElemH.h0 {
+      background-image: url("@svg/react.svg");
+    }
+
+    .gridElemH.h1 {
+      background-image: url("@svg/js.svg");
+    }
+
+    .gridElemH.h2 {
+      background-image: url("@svg/html.svg");
+    }
+
+    .gridElemH.h3 {
+      background-image: url("@svg/css.svg");
+    }
+
+    .gridElemH.h4 {
+      background-image: url("@svg/sass.svg");
+    }
+
+    .gridElemH.h5 {
+      background-image: url("@svg/canva.svg");
+    }
+
+    .gridElemH.h6 {
+      background-image: url("@svg/photoshop.svg");
+    }
+
+    .gridElemH.h7 {
+      background-image: url("@svg/seo.svg");
+    }
+  }
+
+  .softSkills {
+    .gridElemS {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    .gridElemS.s0 {
+      background-image: url("@svg/communication.svg");
+    }
+
+    .gridElemS.s1 {
+      background-image: url("@svg/team.svg");
+    }
+
+    .gridElemS.s2 {
+      background-image: url("@svg/problem-solver.svg");
+    }
+
+    .gridElemS.s3 {
+      background-image: url("@svg/learn.svg");
+    }
+
+    .gridElemS.s4 {
+      background-image: url("@svg/butterfly.svg");
     }
   }
 }
