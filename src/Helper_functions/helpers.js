@@ -28,11 +28,9 @@ const handleOnlyCopy = (mail, elem) => {
 // BACKGROUND IMG CHANGER - NavBar.jsx
 const darkBackground = (darkModeState) => {
   if (darkModeState) {
-    document.documentElement.style.backgroundImage =
-      "url(/src/Images/backgroundDark.png)";
+    document.documentElement.classList.add('dark');
   } else {
-    document.documentElement.style.backgroundImage =
-      "url(/src/Images/background.png)";
+    document.documentElement.classList.remove('dark');
   }
 };
 
