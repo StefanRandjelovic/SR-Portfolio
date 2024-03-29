@@ -37,6 +37,10 @@ html {
   background-repeat: no-repeat;
 }
 
+html.dark {
+  background-image: url("@images/backgroundDark.png");
+}
+
 body,
 #root {
   height: 100%;
