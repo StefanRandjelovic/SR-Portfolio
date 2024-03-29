@@ -28,32 +28,32 @@ const Skills = () => {
       <h2>{langChange ? engInfo.skills.a : srbInfo.skills.a}</h2>
       <div className="hardSkills">
         {langChange
-          ? engInfo.skills.hardSkills.map((skill) => (
-              <div className="gridElem">
-                <p key={crypto.randomUUID()}>{skill}</p>
-                <img src={getImgH(skill)} alt={skill} />
+          ? engInfo.skills.hardSkills.map((skill, index) => (
+              <div key={crypto.randomUUID()} className={`gridElemH h${index}`}>
+                <p>{skill}</p>
+                <div className="img"></div>
               </div>
             ))
-          : srbInfo.skills.hardSkills.map((skill) => (
-              <div className="gridElem">
-                <p key={crypto.randomUUID()}>{skill}</p>
-                <img src={getImgH(skill)} alt={skill} />
+          : srbInfo.skills.hardSkills.map((skill, index) => (
+              <div key={crypto.randomUUID()} className={`gridElemH h${index}`}>
+                <p>{skill}</p>
+                <div className="img"></div>
               </div>
             ))}
       </div>
       <h2>{langChange ? engInfo.skills.b : srbInfo.skills.b}</h2>
       <div className="softSkills">
         {langChange
-          ? engInfo.skills.softSkills.map((skill) => (
-              <div className="gridElem">
-                <p key={crypto.randomUUID()}>{skill}</p>
-                <img src={getImgS(skill)} alt={skill} />
+          ? engInfo.skills.softSkills.map((skill, index) => (
+              <div key={crypto.randomUUID()} className={`gridElemS s${index}`}>
+                <p>{skill}</p>
+                <div className="img"></div>
               </div>
             ))
-          : srbInfo.skills.softSkills.map((skill) => (
-              <div className="gridElem">
-                <p key={crypto.randomUUID()}>{skill}</p>
-                <img src={getImgS(skill)} alt={skill} />
+          : srbInfo.skills.softSkills.map((skill, index) => (
+              <div key={crypto.randomUUID()} className={`gridElemS s${index}`}>
+                <p>{skill}</p>
+                <div className="img"></div>
               </div>
             ))}
       </div>
