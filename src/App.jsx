@@ -12,6 +12,7 @@ import About from "@pages/About";
 import Contact from "@pages/Contact";
 import Skills from "@pages/Skills";
 import ErrorPage from "@pages/ErrorPage";
+import Gallery from "@pages/Gallery";
 
 // COMPONENTS
 import NavBar from "@components/NavBar";
@@ -34,6 +35,7 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<ErrorPage />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </Router>
   );
