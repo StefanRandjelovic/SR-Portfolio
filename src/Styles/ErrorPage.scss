@@ -1,0 +1,12 @@
+// STYLES
+@import "./global.scss";
+
+#error_page {
+  @include main(
+    row,
+    center,
+    space-evenly,
+    rgba(255, 0, 212, 0.3),
+    rgba(0, 255, 255, 0.3)
+  );
+}
