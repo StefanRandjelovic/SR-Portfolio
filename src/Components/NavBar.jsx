@@ -58,6 +58,10 @@ const NavBar = () => {
           <Link to={"/skills"}>
             {langChange ? engInfo.nav[3] : srbInfo.nav[1]}
           </Link>
+          <Link to={"/gallery"}>
+            {langChange ? engInfo.gallery.name : srbInfo.gallery.name}
+          </Link>
+
           <Link to={"/contact"}>
             {langChange ? engInfo.nav[4] : srbInfo.nav[2]}
           </Link>
@@ -119,6 +123,15 @@ const NavBar = () => {
               to={"/skills"}
             >
               {langChange ? engInfo.nav[3] : srbInfo.nav[1]}
+            </Link>
+            <Link
+              onClick={(event) => {
+                event.stopPropagation();
+                setShowMenu(false);
+              }}
+              to={"/gallery"}
+            >
+              {langChange ? engInfo.gallery.name : srbInfo.gallery.name}
             </Link>
             <Link
               onClick={(event) => {
