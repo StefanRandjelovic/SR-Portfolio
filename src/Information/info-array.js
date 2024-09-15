@@ -1,3 +1,5 @@
+const links = [];
+
 const engInfo = {
   nav: ["srb", "eng", "About", "Skills", "Contact"],
   home: [
@@ -50,6 +52,8 @@ const engInfo = {
       ],
     },
   },
+  errorPage: "Could not find this page.🤯",
+  gallery: { name: "Gallery", description: [] },
 };
 
 const srbInfo = {
@@ -99,6 +103,8 @@ const srbInfo = {
       socialM: "Društvene mreže:",
     },
   },
+  errorPage: "Ne možemo pronaći ovu stranicu.🤯",
+  gallery: { name: "Galerija", description: [] },
 };
 
 export { engInfo, srbInfo };
