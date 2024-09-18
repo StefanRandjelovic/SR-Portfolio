@@ -28,9 +28,9 @@ const handleOnlyCopy = (mail, elem) => {
 // BACKGROUND IMG CHANGER - NavBar.jsx
 const darkBackground = (darkModeState) => {
   if (darkModeState) {
-    document.documentElement.classList.add('dark');
+    document.documentElement.classList.add("dark");
   } else {
-    document.documentElement.classList.remove('dark');
+    document.documentElement.classList.remove("dark");
   }
 };
 
@@ -76,4 +76,28 @@ const getImgS = (img) => {
   }
 };
 
-export { handleCopyText, handleOnlyCopy, darkBackground, getImgH, getImgS };
+const handlePicChangeDecrease = (counter, setCounter, linkLenght) => {
+  if (counter === 0) {
+    setCounter(linkLenght);
+  } else {
+    setCounter((prev) => prev - 1);
+  }
+};
+
+const handlePicChangeIncrease = (counter, setCounter, linkLenght) => {
+  if (counter < linkLenght) {
+    setCounter((prev) => prev + 1);
+  } else {
+    setCounter(0);
+  }
+};
+
+export {
+  handleCopyText,
+  handleOnlyCopy,
+  darkBackground,
+  getImgH,
+  getImgS,
+  handlePicChangeDecrease,
+  handlePicChangeIncrease,
+};
