@@ -1,4 +1,22 @@
-const links = [];
+const links = {
+  link: [
+    "src/Images/MARKETING.png",
+    "src/Images/SR.png",
+    "src/Images/Work title.png",
+  ],
+  descr: {
+    eng: [
+      "A saw is cutting marketing sign.",
+      "A SR logo with laurels and three columns in the background",
+      "A neon themed visual.",
+    ],
+    srb: [
+      "Testera koja seče natpis marketing.",
+      "SR logo sa lovorikama i sa tri stuba u pozadini.",
+      "Vizual sa neonskom temom.",
+    ],
+  },
+};
 
 const engInfo = {
   nav: ["srb", "eng", "About", "Skills", "Contact"],
@@ -107,4 +125,4 @@ const srbInfo = {
   gallery: { name: "Galerija", description: [] },
 };
 
-export { engInfo, srbInfo };
+export { engInfo, srbInfo, links };
