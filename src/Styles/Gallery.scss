@@ -69,3 +69,14 @@
     opacity: 1;
   }
 }
+
+// DARK MODE
+#gallery.darkG {
+  @include main(
+    row,
+    center,
+    space-evenly,
+    rgba(33, 3, 255, 0.3),
+    rgba(204, 0, 255, 0.3)
+  );
+}

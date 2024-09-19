@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import { links } from "@info/info-array";
 
 // GSVariable
-import { languageChange } from "@global/store.js";
+import { languageChange, darkMode } from "@global/store.js";
 
 // HELPER FUNCTIONS
 import {
@@ -23,6 +23,7 @@ import Arrow from "@svg/arrow.svg";
 const Gallery = () => {
   // GSVariable
   const langChange = useAtomValue(languageChange);
+  const darkModeState = useAtomValue(darkMode);
 
   // INFO VARIABLE
   const linkLenght = links.link.length - 1;
@@ -33,7 +34,7 @@ const Gallery = () => {
 
   return (
     <>
-      <main id="gallery">
+      <main className={darkModeState ? "darkG" : null} id="gallery">
         <section>
           <button
             id="back"
