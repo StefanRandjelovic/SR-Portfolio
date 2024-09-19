@@ -12,14 +12,25 @@
   section {
     display: flex;
     position: relative;
+    justify-content: center;
+
+    img {
+      height: 85vh;
+      width: 85vh;
+      object-fit: cover;
+      border-radius: 15px;
+    }
 
     #back,
     #forward {
       all: unset;
       position: absolute;
-      width: 40px;
-      height: 40px;
+      width: 10%;
+      height: 10%;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:hover img {
         transform: scale(1.2);
@@ -33,11 +44,11 @@
     }
 
     #back {
-      top: 50%;
+      top: 45%;
       left: 5%;
     }
     #forward {
-      top: 50%;
+      top: 45%;
       right: 5%;
       transform: rotate(180deg);
     }
