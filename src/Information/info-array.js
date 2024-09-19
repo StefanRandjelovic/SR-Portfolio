@@ -1,19 +1,22 @@
 const links = {
   link: [
     "src/Images/MARKETING.png",
-    "src/Images/SR.png",
+    "src/Images/SR_Logo.png",
     "src/Images/Work title.png",
+    "src/Images/SCALES.png",
   ],
   descr: {
     eng: [
       "A saw is cutting marketing sign.",
       "A SR logo with laurels and three columns in the background",
       "A neon themed visual.",
+      "Scales weighing an anvil and a briefcase.",
     ],
     srb: [
       "Testera koja seče natpis marketing.",
       "SR logo sa lovorikama i sa tri stuba u pozadini.",
       "Vizual sa neonskom temom.",
+      "Vaga koja odmerava nakovanj sa akten tašnom.",
     ],
   },
 };
