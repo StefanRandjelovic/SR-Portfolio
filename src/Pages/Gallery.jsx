@@ -6,7 +6,7 @@ import { useAtomValue } from "jotai";
 import { useEffect, useState } from "react";
 
 // INFO
-import { links } from "@info/info-array";
+import { links, srbInfo, engInfo } from "@info/info-array";
 
 // GSVariable
 import { languageChange, darkMode } from "@global/store.js";
@@ -35,6 +35,14 @@ const Gallery = () => {
   return (
     <>
       <main className={darkModeState ? "darkG" : null} id="gallery">
+        <div>
+          <h1>{langChange ? engInfo.gallery.name : srbInfo.gallery.name}</h1>
+          <p>
+            {langChange
+              ? engInfo.gallery.description
+              : srbInfo.gallery.description}
+          </p>
+        </div>
         <section>
           <button
             id="back"
