@@ -74,7 +74,11 @@ const engInfo = {
     },
   },
   errorPage: "Could not find this page.🤯",
-  gallery: { name: "Gallery", description: [] },
+  gallery: {
+    name: "Gallery",
+    description:
+      "Here are some of my visual creative works, of course there will be more in the future, stay tuned...",
+  },
 };
 
 const srbInfo = {
@@ -125,7 +129,11 @@ const srbInfo = {
     },
   },
   errorPage: "Ne možemo pronaći ovu stranicu.🤯",
-  gallery: { name: "Galerija", description: [] },
+  gallery: {
+    name: "Galerija",
+    description:
+      "Evo nekih od mojih vizuelnih kreacija, naravno biće ih više u budućnosti, tako da ostanite samnom...",
+  },
 };
 
 export { engInfo, srbInfo, links };
