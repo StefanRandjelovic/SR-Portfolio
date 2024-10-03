@@ -92,6 +92,19 @@ const handlePicChangeIncrease = (counter, setCounter, linkLenght) => {
   }
 };
 
+const handleImgChange = (counter, mark, logo, work, scal) => {
+  switch (counter) {
+    case 0:
+      return mark;
+    case 1:
+      return logo;
+    case 2:
+      return work;
+    case 3:
+      return scal;
+  }
+};
+
 export {
   handleCopyText,
   handleOnlyCopy,
@@ -100,4 +113,5 @@ export {
   getImgS,
   handlePicChangeDecrease,
   handlePicChangeIncrease,
+  handleImgChange,
 };
