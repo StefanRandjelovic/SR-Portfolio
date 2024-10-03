@@ -1,9 +1,10 @@
 const links = {
   link: [
-    "src/Images/MARKETING.png",
-    "src/Images/SR_Logo.png",
-    "src/Images/Work title.png",
-    "src/Images/SCALES.png",
+    // MARKETING,
+    // SR_Logo,
+    // Work title,
+    // SCALES,
+    1, 2, 3, 4,
   ],
   descr: {
     eng: [
