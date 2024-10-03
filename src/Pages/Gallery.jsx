@@ -15,10 +15,17 @@ import { languageChange, darkMode } from "@global/store.js";
 import {
   handlePicChangeDecrease,
   handlePicChangeIncrease,
+  handleImgChange,
 } from "@helpers/helpers";
 
 // SVG ASSET
 import Arrow from "@svg/arrow.svg";
+
+// IMG import
+import MARKETING from "@images/MARKETING.png";
+import SR from "@images/SR_Logo.png";
+import WORKT from "@images/Work title.png";
+import SCAL from "@images/SCALES.png";
 
 const Gallery = () => {
   // GSVariable
@@ -57,13 +64,14 @@ const Gallery = () => {
           <img
             key={key}
             className="centralImage"
-            src={links.link[counter]}
+            src={handleImgChange(counter, MARKETING, SR, WORKT, SCAL)}
             alt={
               langChange ? links.descr.eng[counter] : links.descr.srb[counter]
             }
             title={
               langChange ? links.descr.eng[counter] : links.descr.srb[counter]
             }
+            loading="lazy"
           />
           <button
             id="forward"
