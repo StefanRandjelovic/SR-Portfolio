@@ -92,7 +92,17 @@ const handlePicChangeIncrease = (counter, setCounter, linkLenght) => {
   }
 };
 
-const handleImgChange = (counter, mark, logo, work, scal) => {
+const handleImgChange = (
+  counter,
+  mark,
+  logo,
+  work,
+  scal,
+  por1,
+  por2,
+  por3,
+  por4
+) => {
   switch (counter) {
     case 0:
       return mark;
@@ -102,6 +112,14 @@ const handleImgChange = (counter, mark, logo, work, scal) => {
       return work;
     case 3:
       return scal;
+    case 4:
+      return por1;
+    case 5:
+      return por2;
+    case 6:
+      return por3;
+    case 7:
+      return por4;
   }
 };
 
