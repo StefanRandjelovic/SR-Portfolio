@@ -80,10 +80,14 @@ const Gallery = () => {
               POR4
             )}
             alt={
-              langChange ? links.descr.eng[counter] : links.descr.srb[counter]
+              langChange
+                ? links.descr.eng?.[counter]
+                : links.descr.srb?.[counter]
             }
             title={
-              langChange ? links.descr.eng[counter] : links.descr.srb[counter]
+              langChange
+                ? links.descr.eng?.[counter]
+                : links.descr.srb?.[counter]
             }
             loading="lazy"
           />
