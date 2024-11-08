@@ -26,6 +26,10 @@ import MARKETING from "@images/MARKETING.png";
 import SR from "@images/SR_Logo.png";
 import WORKT from "@images/Work title.png";
 import SCAL from "@images/SCALES.png";
+import POR1 from "@images/Portfolio1.png";
+import POR2 from "@images/Portfolio2.png";
+import POR3 from "@images/Portfolio3.png";
+import POR4 from "@images/Portfolio4.png";
 
 const Gallery = () => {
   // GSVariable
@@ -64,7 +68,17 @@ const Gallery = () => {
           <img
             key={key}
             className="centralImage"
-            src={handleImgChange(counter, MARKETING, SR, WORKT, SCAL)}
+            src={handleImgChange(
+              counter,
+              MARKETING,
+              SR,
+              WORKT,
+              SCAL,
+              POR1,
+              POR2,
+              POR3,
+              POR4
+            )}
             alt={
               langChange ? links.descr.eng[counter] : links.descr.srb[counter]
             }
