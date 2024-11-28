@@ -24,6 +24,7 @@ import Arrow from "@svg/arrow.svg";
 // IMG import
 import MARKETING from "@images/MARKETING.png";
 import SR from "@images/SR_Logo.png";
+import SR2 from '@images/SR_Logo1.png'
 import WORKT from "@images/Work title.png";
 import SCAL from "@images/SCALES.png";
 import POR1 from "@images/Portfolio1.png";
@@ -72,6 +73,7 @@ const Gallery = () => {
               counter,
               MARKETING,
               SR,
+              SR2,
               WORKT,
               SCAL,
               POR1,

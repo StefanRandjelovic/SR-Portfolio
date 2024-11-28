@@ -4,7 +4,7 @@ const links = {
     // SR_Logo,
     // Work title,
     // SCALES,
-    1, 2, 3, 4, 5, 6, 7, 8,
+    1, 2, 3, 4, 5, 6, 7, 8, 9
   ],
   descr: {
     eng: [

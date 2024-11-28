@@ -96,6 +96,7 @@ const handleImgChange = (
   counter,
   mark,
   logo,
+  logo1,
   work,
   scal,
   por1,
@@ -109,16 +110,18 @@ const handleImgChange = (
     case 1:
       return logo;
     case 2:
-      return work;
+      return logo1;
     case 3:
-      return scal;
+      return work;
     case 4:
-      return por1;
+      return scal;
     case 5:
-      return por2;
+      return por1;
     case 6:
-      return por3;
+      return por2;
     case 7:
+      return por3;
+    case 8:
       return por4;
   }
 };
